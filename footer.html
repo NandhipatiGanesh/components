@@ -1,177 +1,354 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page Title</title>
-<style>
-body{
-background:#000;
-}
-.blacksy{
-	background:#000 !important;
-	width: 80%;
-    max-width: 929px;
-    margin: 0 auto;
-    border-radius: 40px;
-	grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    border-radius: 40px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 104px;
-    display: flex;
-	color:#FFFFFF;
-}
-.blacksy h2{
-	letter-spacing: -1.024px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 104%;
-	color:white;
-}
-@media(max-width:820px){
-	.blacksy h2{
-	        letter-spacing: -.832px;
-        font-size: 52px;
-}
-	.blacksy{
-		grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    border-radius: 40px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    display: flex;
-		width:95%;
-	}
-}
-@media(max-width:479px){
-	.blacksy h2{
-	        letter-spacing: -.48px;
-        font-size: 30px;
-}
-	.blacksy{
-		grid-column-gap: 16px;
-        grid-row-gap: 16px;
-        border-radius: 28px;
-        padding: 56px 24px;
-		width: 95%;
-	}
-}
-.blended-text{
-	color:rgba(255, 255, 255, .6);
-}
-.inner-container-box {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
-.border-1px-solid {
-    border: 1px solid rgba(255, 255, 255, .12);
-    background-color: rgba(255, 255, 255, .08) !important;
-    cursor: pointer;
-    border-radius: 24px;
-    padding: 28px 40px;
-    transition: background-color .2s cubic-bezier(.445, .05, .55, .95);
-    grid-row-gap: 0 !important;
-    margin-bottom: 16px;
-}
-.accordion-item-trigger {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    width: 100%;
-}
-.size-18 {
-    font-size: 18px;
-}
-.semibold-l {
-    letter-spacing: -.18px;
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background: #000;
+        margin: 0;
+        font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+      }
+      section{
+        width: 100%;
+        height: auto;
+      }
+      .blacksy {
+        background: #000 !important;
+        width: 80%;
+        max-width: 929px;
+        margin: 0 auto;
+        border-radius: 40px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        border-radius: 40px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 104px;
+        display: flex;
+        color: #ffffff;
+      }
+      .blacksy h2 {
+        letter-spacing: -1.024px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 104%;
+        color: white;
+      }
+      @media (max-width: 820px) {
+        .blacksy h2 {
+          letter-spacing: -0.832px;
+          font-size: 52px;
+        }
+        .blacksy {
+          grid-column-gap: 20px;
+          grid-row-gap: 20px;
+          border-radius: 40px;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          display: flex;
+          width: 95%;
+        }
+      }
+      @media (max-width: 479px) {
+        .blacksy h2 {
+          letter-spacing: -0.48px;
+          font-size: 30px;
+          font-weight: 900;
+        line-height: 1.4em;
+        letter-spacing: 1px;
+        }
+        .blacksy {
+          grid-column-gap: 16px;
+          grid-row-gap: 16px;
+          border-radius: 28px;
+          padding: 56px 24px;
+          width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        section{
+            width: 100%;
+            padding: 20px;
+        }
+        .border-1px-solid{
+            width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        }
+      }
+      .blended-text {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .inner-container-box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+      }
+      .border-1px-solid {
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        cursor: pointer;
+        border-radius: 24px;
+        padding: 28px 40px;
+        transition: background-color 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        grid-row-gap: 0 !important;
+        margin-bottom: 16px;
+      }
+      .accordion-item-trigger {
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        width: 100%;
+      }
+      .size-18 {
+        font-size: 18px;
+      }
+      .regular-l.faq-text {
+        margin-top: 16px;
+        margin-bottom: 12px;
+        line-height: 1.7em;
+    }
+      .semibold-l {
+        tter-spacing: 0px;
     font-weight: 600;
     color: white;
-}
-.accordion-item-icon {
-    background-color: #ffe265;
-    border-radius: 50%;
-    flex: none;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    padding: 14px;
-    display: flex;
-}
-img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-}
-.accordion-item-content {
-    padding-right: 64px;
-    overflow: hidden;
-    height: 0;
-    transition: height 0.3s ease;
-}
-</style>
-</head>
-<body>
-  	<section class="faqs-section">
-			<div class="blacksy">
-					<h2>
-						<span class="blended-text">Your Burning<br> from </span> Questions Answered
-					</h2>
-				</div>
-				<div class="blacksy border-1px-solid">
-					<div class="accordion-item-trigger"><div class="semibold-l text-color-white max-width-720 size-18">What services does your agency offer?</div><div class="accordion-item-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg" loading="lazy" alt="" class="icon-size-16"></div></div>
-					<div class="accordion-item-content" style="height: 0px;"><p class="regular-l faq-text">We offer a comprehensive range of digital marketing services, including SEO, PPC advertising, social media marketing, content creation, email marketing, and more. Our goal is to provide tailored solutions to meet your specific needs and objectives.</p></div>
-				</div>
-				<div class="blacksy border-1px-solid">
-					<div class="accordion-item-trigger"><div class="semibold-l text-color-white max-width-720 size-18">What services does your agency offer?</div><div class="accordion-item-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg" loading="lazy" alt="" class="icon-size-16"></div></div>
-					<div class="accordion-item-content" style="height: 0px;"><p class="regular-l faq-text">We offer a comprehensive range of digital marketing services, including SEO, PPC advertising, social media marketing, content creation, email marketing, and more. Our goal is to provide tailored solutions to meet your specific needs and objectives.</p></div>
-				</div>
-				<div class="blacksy border-1px-solid">
-					<div class="accordion-item-trigger"><div class="semibold-l text-color-white max-width-720 size-18">What services does your agency offer?</div><div class="accordion-item-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg" loading="lazy" alt="" class="icon-size-16"></div></div>
-					<div class="accordion-item-content" style="height: 0px;"><p class="regular-l faq-text">We offer a comprehensive range of digital marketing services, including SEO, PPC advertising, social media marketing, content creation, email marketing, and more. Our goal is to provide tailored solutions to meet your specific needs and objectives.</p></div>
-				</div>
-				<div class="blacksy border-1px-solid">
-					<div class="accordion-item-trigger"><div class="semibold-l text-color-white max-width-720 size-18">What services does your agency offer?</div><div class="accordion-item-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg" loading="lazy" alt="" class="icon-size-16"></div></div>
-					<div class="accordion-item-content" style="height: 0px;"><p class="regular-l faq-text">We offer a comprehensive range of digital marketing services, including SEO, PPC advertising, social media marketing, content creation, email marketing, and more. Our goal is to provide tailored solutions to meet your specific needs and objectives.</p></div>
-				</div>
-				<div class="blacksy border-1px-solid">
-					<div class="accordion-item-trigger"><div class="semibold-l text-color-white max-width-720 size-18">What services does your agency offer?</div><div class="accordion-item-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg" loading="lazy" alt="" class="icon-size-16"></div></div>
-					<div class="accordion-item-content" style="height: 0px;"><p class="regular-l faq-text">We offer a comprehensive range of digital marketing services, including SEO, PPC advertising, social media marketing, content creation, email marketing, and more. Our goal is to provide tailored solutions to meet your specific needs and objectives.</p></div>
-				</div>
-				
-				
-			</section>
-  <script>
-    
-document.querySelectorAll('.accordion-item-trigger').forEach(trigger => {
-    trigger.addEventListener('click', function() {
-        // Toggle the active class on the clicked trigger
-        this.classList.toggle('active');
-
-        // Get the associated content panel
-        const content = this.nextElementSibling;
-
-        // Check if the content is already open
-        if (content.style.height && content.style.height !== '0px') {
-            content.style.height = '0px';
-        } else {
-            // If closed, measure and set height dynamically
-            content.style.height = content.scrollHeight + 'px';
+    line-height: 1.6em;
+      }
+      .regular-l {
+        color: rgba(255, 255, 255, .6);
+    }
+      .accordion-item-icon {
+        background-color: #ffe265;
+        border-radius: 50%;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        padding: 14px;
+        display: flex;
+      }
+      img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+      .accordion-item-content {
+        padding-right: 64px;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.3s ease;
+      }
+      @media (max-width: 475px) {
+        .accordion-item-content {
+          padding-right: 20px !important;
         }
-    });
-});
+      }
+      @media (max-width: 475px) {
+        .border-1px-solid {
+          border-radius: 16px;
+          padding: 20px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="faqs-section">
+      <div class="blacksy">
+        <h2>
+          <span class="blended-text"
+            >Your Burning<br />
+            from
+          </span>
+          Questions Answered
+        </h2>
+      </div>
+      <div class="blacksy border-1px-solid">
+        <div class="accordion-item-trigger">
+          <div class="semibold-l text-color-white max-width-720 size-18">
+            What services does your agency offer?
+          </div>
+          <div
+            class="accordion-item-icon"
+            style="
+              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+            "
+          >
+            <img
+              src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg"
+              loading="lazy"
+              alt=""
+              class="icon-size-16"
+            />
+          </div>
+        </div>
+        <div class="accordion-item-content" style="height: 0px">
+          <p class="regular-l faq-text">
+            We offer a comprehensive range of digital marketing services,
+            including SEO, PPC advertising, social media marketing, content
+            creation, email marketing, and more. Our goal is to provide tailored
+            solutions to meet your specific needs and objectives.
+          </p>
+        </div>
+      </div>
+      <div class="blacksy border-1px-solid">
+        <div class="accordion-item-trigger">
+          <div class="semibold-l text-color-white max-width-720 size-18">
+            What services does your agency offer?
+          </div>
+          <div
+            class="accordion-item-icon"
+            style="
+              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+            "
+          >
+            <img
+              src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg"
+              loading="lazy"
+              alt=""
+              class="icon-size-16"
+            />
+          </div>
+        </div>
+        <div class="accordion-item-content" style="height: 0px">
+          <p class="regular-l faq-text">
+            We offer a comprehensive range of digital marketing services,
+            including SEO, PPC advertising, social media marketing, content
+            creation, email marketing, and more. Our goal is to provide tailored
+            solutions to meet your specific needs and objectives.
+          </p>
+        </div>
+      </div>
+      <div class="blacksy border-1px-solid">
+        <div class="accordion-item-trigger">
+          <div class="semibold-l text-color-white max-width-720 size-18">
+            What services does your agency offer?
+          </div>
+          <div
+            class="accordion-item-icon"
+            style="
+              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+            "
+          >
+            <img
+              src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg"
+              loading="lazy"
+              alt=""
+              class="icon-size-16"
+            />
+          </div>
+        </div>
+        <div class="accordion-item-content" style="height: 0px">
+          <p class="regular-l faq-text">
+            We offer a comprehensive range of digital marketing services,
+            including SEO, PPC advertising, social media marketing, content
+            creation, email marketing, and more. Our goal is to provide tailored
+            solutions to meet your specific needs and objectives.
+          </p>
+        </div>
+      </div>
+      <div class="blacksy border-1px-solid">
+        <div class="accordion-item-trigger">
+          <div class="semibold-l text-color-white max-width-720 size-18">
+            What services does your agency offer?
+          </div>
+          <div
+            class="accordion-item-icon"
+            style="
+              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+            "
+          >
+            <img
+              src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg"
+              loading="lazy"
+              alt=""
+              class="icon-size-16"
+            />
+          </div>
+        </div>
+        <div class="accordion-item-content" style="height: 0px">
+          <p class="regular-l faq-text">
+            We offer a comprehensive range of digital marketing services,
+            including SEO, PPC advertising, social media marketing, content
+            creation, email marketing, and more. Our goal is to provide tailored
+            solutions to meet your specific needs and objectives.
+          </p>
+        </div>
+      </div>
+      <div class="blacksy border-1px-solid">
+        <div class="accordion-item-trigger">
+          <div class="semibold-l text-color-white max-width-720 size-18">
+            What services does your agency offer?
+          </div>
+          <div
+            class="accordion-item-icon"
+            style="
+              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+              transform-style: preserve-3d;
+            "
+          >
+            <img
+              src="https://cdn.prod.website-files.com/6606e04a4d77039f6a24a3b6/6606e04a4d77039f6a24a3f9_Dismiss.svg"
+              loading="lazy"
+              alt=""
+              class="icon-size-16"
+            />
+          </div>
+        </div>
+        <div class="accordion-item-content" style="height: 0px">
+          <p class="regular-l faq-text">
+            We offer a comprehensive range of digital marketing services,
+            including SEO, PPC advertising, social media marketing, content
+            creation, email marketing, and more. Our goal is to provide tailored
+            solutions to meet your specific needs and objectives.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      document
+        .querySelectorAll(".accordion-item-trigger")
+        .forEach((trigger) => {
+          trigger.addEventListener("click", function () {
+            // Toggle the active class on the clicked trigger
+            this.classList.toggle("active");
 
+            // Get the associated content panel
+            const content = this.nextElementSibling;
 
-  </script>
+            // Check if the content is already open
+            if (content.style.height && content.style.height !== "0px") {
+              content.style.height = "0px";
+            } else {
+              // If closed, measure and set height dynamically
+              content.style.height = content.scrollHeight + "px";
+            }
+          });
+        });
+    </script>
   </body>
 </html>
