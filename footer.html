@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page Title</title>
 <style>
+body{
+background:#000;
+}
 .blacksy{
 	background:#000 !important;
 	width: 80%;
@@ -68,9 +71,57 @@
     width: 100%;
     align-items: center;
 }
-
+.border-1px-solid {
+    border: 1px solid rgba(255, 255, 255, .12);
+    background-color: rgba(255, 255, 255, .08) !important;
+    cursor: pointer;
+    border-radius: 24px;
+    padding: 28px 40px;
+    transition: background-color .2s cubic-bezier(.445, .05, .55, .95);
+    grid-row-gap: 0 !important;
+    margin-bottom: 16px;
+}
+.accordion-item-trigger {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.size-18 {
+    font-size: 18px;
+}
+.semibold-l {
+    letter-spacing: -.18px;
+    font-weight: 600;
+    color: white;
+}
+.accordion-item-icon {
+    background-color: #ffe265;
+    border-radius: 50%;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 14px;
+    display: flex;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.accordion-item-content {
+    padding-right: 64px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+}
 </style>
 </head>
+<body>
   	<section class="faqs-section">
 			<div class="blacksy">
 					<h2>
@@ -122,4 +173,5 @@ document.querySelectorAll('.accordion-item-trigger').forEach(trigger => {
 
 
   </script>
+  </body>
 </html>
